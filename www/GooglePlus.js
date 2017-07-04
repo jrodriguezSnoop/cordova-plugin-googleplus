@@ -6,7 +6,7 @@ GooglePlus.prototype.isAvailable = function (callback) {
 };
 
 GooglePlus.prototype.login = function (options, successCallback, errorCallback) {
-  cordova.exec(successCallback, errorCallback, "GooglePlus", "login", [options]);
+  cordova.exec(successCallback, errorCallback, "GooglePlus", "login", [options.iOSApiKey]);
 };
 
 GooglePlus.prototype.trySilentLogin = function (options, successCallback, errorCallback) {
